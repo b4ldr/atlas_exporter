@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+export GO111MODULE=on
+export GOFLAGS=-mod=vendor
+export PATH :=/usr/lib/go-1.25/bin:$(PATH)
+export PATH
+
+
+override_dh_auto_install:
+	dh_auto_install -- --no-source
+
+%:
+	dh $@ --buildsystem=golang --with=golang
