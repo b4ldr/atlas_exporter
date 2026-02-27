@@ -1,0 +1,2 @@
+debian/prometheus-atlas-exporter etc/default/
+debian/config.yml.sample etc/prometheus-atlas-exporter/

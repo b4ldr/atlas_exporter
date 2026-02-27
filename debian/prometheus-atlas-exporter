@@ -1,0 +1,3 @@
+# Default options for prometheus-atlas-exporter
+# These can be overridden by the admin
+OPTS="-config.file /etc/prometheus-atlas-exporter/config.yml"
