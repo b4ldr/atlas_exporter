@@ -1,0 +1,17 @@
+prometheus-atlas-exporter (1.0.5) unstable; urgency=medium
+
+  * Use most recent version
+
+ -- John Bond <john.bond@icannorg>  Wed, 25 Feb 2026 09:57:32 +0000
+
+prometheus-atlas-exporter (1.0+git20191204.ffafab7-2) buster-wikimedia; urgency=medium
+
+  * Rebuild for Buster T247967
+
+ -- Moritz Muehlenhoff <moritz@wikimedia.org>  Fri, 17 Jul 2020 08:27:45 +0000
+
+prometheus-atlas-exporter (1.0+git20191204.ffafab7-1) stretch; urgency=medium
+
+  * Initial debianization
+
+ -- Chris Danis <cdanis@wikimedia.org>  Tue, 03 Dec 2019 12:34:44 -0500
