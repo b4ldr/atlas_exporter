@@ -1,0 +1,21 @@
+[Unit]
+Description=Prometheus Atlas Exporter
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=-/etc/default/prometheus-atlas-exporter
+ExecStart=/usr/bin/atlas_exporter $OPTS
+Restart=on-failure
+DynamicUser=yes
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target
