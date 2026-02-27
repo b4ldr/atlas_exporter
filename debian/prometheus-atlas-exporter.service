@@ -1,0 +1,14 @@
+[Unit]
+Description=Prometheus Atlas Exporter
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=-/etc/default/prometheus-atlas-exporter
+ExecStart=/usr/bin/atlas_exporter $OPTS
+Restart=on-failure
+User=nobody
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target
