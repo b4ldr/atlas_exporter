@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: atlas_exporter
+Source: https://github.com/czerwonk/atlas_exporter
+Files-Excluded:
+  Godeps/_workspace
+
+Files: *
+Copyright: 2017 Daniel Czerwonk
+License: LGPL-3.0
+
+Files: debian/*
+Copyright: 2019 Chris Danis <cdanis@wikimedia.org>
+License: LGPL-3.0
+Comment: Debian packaging is licensed under the same terms as upstream
+
+License: LGPL-3.0
